@@ -1,4 +1,4 @@
-torch
+torch==1.8.0
 joblib==1.2.0
 fastapi==0.97
 pydantic==1.10.8
