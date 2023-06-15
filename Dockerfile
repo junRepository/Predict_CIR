@@ -2,7 +2,7 @@ FROM python:3.10
 COPY /app /app
 COPY requirements.txt requirements.txt
 
-RUN api-get update && \
+RUN apt-get update && \
     python -m pip install --upgrade pip && \
     pip install -r requirement.txt
 
