@@ -1,6 +1,6 @@
 FROM python:3.10
 COPY /app /app
-COPY requirement.txt requirement.txt
+COPY requirements.txt requirements.txt
 
 RUN api-get update && \
     python -m pip install --upgrade pip && \
