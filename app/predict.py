@@ -23,7 +23,7 @@ class NeuralNet(torch.nn.Module):
 def predict_model(data):
     model = NeuralNet(7,2)
 
-    loaded_scaler = joblib.load('models/minmax_scaler.pkl')
+    loaded_scaler = joblib.load('models/minmax_scaler.pkl' )
     ##AAA
     # data = [[-15.52,-2.87,2.02,-0.63,56.6,76.66,1.13]]
     #D
