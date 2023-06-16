@@ -1,5 +1,6 @@
 FROM python:3.10
-COPY /app /app
+COPY app app
+COPY models models
 COPY requirements.txt requirements.txt
 
 RUN apt-get update && \
