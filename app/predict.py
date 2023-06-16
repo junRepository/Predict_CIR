@@ -24,15 +24,10 @@ def predict_model(data):
     model = NeuralNet(7,2)
 
     loaded_scaler = joblib.load('/models/minmax_scaler.pkl' )
-    ##AAA
-    # data = [[-15.52,-2.87,2.02,-0.63,56.6,76.66,1.13]]
-    #D
-    # data = [[-4.03,-20.3,-9.41,-10.3,90.02,11.08,0.47]]
-
     data_scaled = loaded_scaler.transform(data)
     data_tensor = torch.FloatTensor(data_scaled)
 
-    model.load_state_dict(torch.load('/models/predict_model.pth'))
+    model.load_state_dict(torch.load('/models/predict_model.pth', map_location=torch.device('cpu')))
     model.eval()
 
     with torch.no_grad():
