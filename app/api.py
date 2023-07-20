@@ -19,4 +19,4 @@ class DataClassificationRequest(BaseModel):
 async def predict(request: DataClassificationRequest):
     text = request.data
     prediction = predict_model(text)
-    return {"prediction": prediction}
+    return {prediction}
