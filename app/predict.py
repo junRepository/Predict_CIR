@@ -17,5 +17,4 @@ def predict_model(data):
 
     _, predicted_idx = torch.max(output, 1)
     predicted_label = predicted_idx.item()
-
     return predicted_label

@@ -14,7 +14,7 @@ def root():
 class DataClassificationRequest(BaseModel):
     data: list
 
-
+# 예측
 @app.post("/predict")
 async def predict(request: DataClassificationRequest):
     text = request.data
