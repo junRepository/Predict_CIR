@@ -1,6 +1,6 @@
 import torch
 import joblib
-from models import NeuralNet
+from app.models import NeuralNet
 
 def predict_model(data):
 
@@ -18,7 +18,3 @@ def predict_model(data):
     _, predicted_idx = torch.max(output, 1)
     predicted_label = predicted_idx.item()
     return predicted_label
-
-model = NeuralNet(8,2)
-model.load_state_dict(torch.load('./models/predict_model_feature8.pth', map_location=torch.device('cpu')))
-print(torch.load('./models/predict_model_feature8.pth', map_location=torch.device('cpu')))

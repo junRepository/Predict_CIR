@@ -35,4 +35,3 @@ class NeuralNet(torch.nn.Module):
         output = self.dropout(self.relu(self.batchnorm6(self.hidden_layer6(output))))
         output = self.output_layer(output)
         return output
-
