@@ -8,7 +8,7 @@ def predict_model(data):
     data_scaled = loaded_scaler.transform(data)
     data_tensor = torch.FloatTensor(data_scaled)
     
-    model = NeuralNet(8,2)
+    model = NeuralNet(5,2)
     model.load_state_dict(torch.load('./models/predict_model.pth', map_location=torch.device('cpu')))
     model.eval()
 
