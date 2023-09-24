@@ -18,5 +18,6 @@ class DataClassificationRequest(BaseModel):
 @app.post("/predict")
 async def predict(request: DataClassificationRequest):
     list_data = request.data
+    print(list_data)
     prediction = predict_model(list_data)
     return {prediction}
