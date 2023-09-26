@@ -10,8 +10,8 @@
 ### 2. 데이터
 ###### 기업 신용등급은 재무적 평가요소와 비재무적 평가요소로 평가를 하여 등급을 메긴다.
 ###### 일반 사용자들이 재무 데이터를 쉽게 구할 수 있으므로 재무적 평가요소로 데이터를 수집하였다.
-![nicefinancial](https://github.com/junRepository/Predict_CIR/assets/97268718/87ea11de-9fba-4b3e-a9c2-d2bda5ad2cd8)
-
+<img src="https://github.com/junRepository/Predict_CIR/assets/97268718/87ea11de-9fba-4b3e-a9c2-d2bda5ad2cd8" width="60%"/>
+<br/>
 
 ###### 평가 요소 중 성장성, 수익성, 안전성, 활동성을 분석하여 8개의 지표로 분석을 하였다.
 
