@@ -23,12 +23,12 @@
 ##### 2.2 데이터 분석
 * 각 특징(Feature)들이 클래스(Class)에 영향을 미치는가를 분석하기 위해 **회귀 분석**을 하였다.
 * 회귀 분석을 통해 P-값이 가장 큰 특징을 제거하였다.
-<img src="/images/regression-analysis.png" width="60%" height="80%"> 
+<img src="https://github.com/junRepository/Predict_CIR/assets/97268718/216a5beb-deff-4877-9a75-a203d65e3c92" width="60%" height="80%"> 
 
 * 다음으로 나머지 데이터들에서 이상치가 있는 지 Boxplot를 이용하여 확인하였다.
 * Boxplot을 이용하여 이상치가 있는 **4**, **6** 특징을 제거하였다.
 * 총 5개의 특징을 가지고 학습을 하였다.<br/>
-<img src="/images/boxplot.png" width="60%" height="80%"> 
+<img src="https://github.com/junRepository/Predict_CIR/assets/97268718/665d8423-e6b9-445b-aebd-1bbd03f19709" width="60%" height="80%"> 
 
 
 
@@ -40,12 +40,12 @@
 * 연속형 데이터를 쉽게 분석 가능하다.
 * 예측하는 능력이 다른 모델보다 우수하다.<br/>
 **-> 이러한 장점 때문에 DNN을 이용하였다.**
-<img src="/images/DNN.png" width="80%" height="80%"> 
+<img src="https://github.com/junRepository/Predict_CIR/assets/97268718/7a955519-428a-4be4-8520-28d340ebb301" width="80%" height="80%"> 
 
 ### 3.1 학습 테크닉
 ##### \<오버피팅을 해결하기 위한 방법\>  
 ###### 학습을 하는 중간에 train의 정확도는 높아지지만 test의 정확도는 그리 높지않은 것을 발견하게 되었다. 말로만 들었던 오버피팅이 발생하게 된 것이다.<br/> 오버피팅을 해결하기위해 데이터의 수를 증가시키거나 모델 복잡도 줄이기, 드롭아웃과 같은 학습 테크닉을 사용하는 것이었다.<br/> 데이터를 증가시키기엔 다소 시간이 거리기 때문에 복잡도 줄이기, 학습 테크닉을 사용하기로 했다.<br/><font color='#f6b141'> -> 배치정규화, 드롭아웃, Learning Rete Scheduler를 이용하여 DNN이 학습하는 동안에 오버피팅이 발생하지 않도록 하였다. </font>
-<img src="/images/neuralnet.png" width="80%" height="80%"><br/> 
+<img src="https://github.com/junRepository/Predict_CIR/assets/97268718/3543a027-ec3f-477c-9746-1f3646beec97" width="80%" height="80%"><br/> 
 은닉층을 4개로 지정을 하였다. 은닉층을 2개로 하였을 땐 학습을 제대로 하지 못하는 것을 보았고, 4개 이상으로 학습을 하였을 때도 좋지는 못하였다.<br/>각 입력층 은닉층 출력층에는 배치정규화를 사용하였고 활성화 함수는 ReLU를 사용하였다.<br/> 손실함수로 CrossEntropyLoss를 사용하기 때문에 출력층에는 활성화 함수를 사용하지 않았다. **(Pytorch에서 제공하는  CrossEntropyLosss는 softmax와 cross entropy를 합쳐놓았기 때문이다. )**<br/>
 
 1) 배치정규화(Batch Normalization)<br/>
