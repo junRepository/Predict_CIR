@@ -74,7 +74,7 @@ scheduler = lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', factor=0.5, pa
 
 ###### 아래의 그래프는 `ReduceLROnPlateau`를 사용하면서 나온 Training 그래프이다. <br/> epoch가 많아서 잘 보이지 않지만 loss가 증가할 거 같으면 Learning rate를 줄여 loss가 꾸준히 감소하는 것을 볼 수 있고, 결과적으로 정확도가 높아지는 것을 볼 수 있다.
 <img src="https://github.com/junRepository/Predict_CIR/assets/97268718/bb78f9a2-a9e4-4146-997e-8bc3a57afc82" width="45%" height="45%"> <img src="https://github.com/junRepository/Predict_CIR/assets/97268718/f9637c28-88eb-444d-aef6-2bb53e247e68" width="45%" height="10%"> <br/>
- - 학습 테크닉을 사용하면서 학습을 하니 Loss가 꾸준히 감소하고 traning정확도도 꾸준히 증가하는 것을 알 수 있고 최종 **test 정확도는 84%** 를 달성하였다. 
+ - 학습 테크닉을 사용하면서 학습을 하니 Loss가 꾸준히 감소하고 traning정확도도 꾸준히 증가하는 것을 알 수 있고 최종 ***test 정확도는 84%***를 달성하였다. 
  - 또한 DNN의 단점인 Overfitting도 발생하지 않는 것을 알 수 있다. 
 
 ***
