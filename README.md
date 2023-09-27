@@ -78,7 +78,7 @@
 <img src="https://github.com/junRepository/Predict_CIR/assets/97268718/9f852215-fc34-48e6-bb23-c36cf3e61eb7" width="80%"><br/>
 
 2. ##### Docker를 이용하여 모델 배포
-    * Docker image로 build
+    * Docker image로 build<br/>
         <img src="https://github.com/junRepository/Predict_CIR/assets/97268718/91433427-36f8-43ee-a0ba-04663a3bd728" width="80%"><br/>
     * Docker image를 Docker container로 배포
         <img src="https://github.com/junRepository/Predict_CIR/assets/97268718/4db4c396-59df-4036-97fd-bd7cba3551f5" width="80%"><br/>
